@@ -1,0 +1,215 @@
+/*
+    BACKGROUND COLORS
+*/
+
+$header-bkgd: #b2ffb2;
+$about-me-bkgd: #b2d9ff;
+$footer-bkgd: #ffd9b2;
+
+
+/*
+    GENERAL SECTION
+*/
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+
+
+    .container {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 auto;
+        overflow-y: auto;
+    }
+
+    .section-contents {
+        max-width: 1200px;
+    }
+
+    .title {
+        font-family: 'Lato', helvetica;
+        font-size: calc(1em + 2vmax);
+        font-weight: 700;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-family: 'Lato', helvetica;
+        font-size: calc(.75em + 1.25vmax);
+        font-weight: 400;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .text {
+        font-family: 'Lato', helvetica;
+        font-size: calc(.5em + 1vmax);
+        font-weight: 400;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    a {
+        color: #000;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/*
+    HEADER SECTION
+*/
+
+#header-section {
+    background-color: $header-bkgd;
+    position: relative;
+
+    #i-am-a-web-developer-text {
+        text-align: right;
+    }
+
+    #my-desk {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        height: 50vw;
+        background: transparent url(/assets/svg/desktop.svg) no-repeat center center;
+        background-size: 500% 500%;
+        border: 2px solid black;
+        border-radius: 60px;
+        overflow-y: hidden;
+    }
+
+    #laptop {
+        transform: rotate(-30deg);
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 50%;
+
+    }
+
+    #iphone {
+        transform: rotate(40deg);
+        position: absolute;
+        top: 20%;
+        right: 10%;
+        width: 10%;
+    }
+
+    #coffee {
+        transform: rotate(130deg);
+        position: absolute;
+        top: 10%;
+        right: 30%;
+        width: 13%;
+    }
+}
+
+
+/*
+    ABOUT ME SECTION
+*/
+
+#about-me-section {
+    background-color: $about-me-bkgd;
+    position: relative;
+
+
+    #about-me-text-container {
+        width: 100%;
+        float: left;
+    }
+
+    #about-me-pic-container {
+        width: 100%;
+        float: left;
+        height: 100vw;
+        max-height: 600px;
+        background: #66b3ff url(/assets/img/about_me.jpg) no-repeat center center;
+        background-size: contain;
+        background-blend-mode: multiply;
+    }
+
+    .text {
+        width: 80%;
+    }
+}
+
+
+/*
+    FOOTER SECTION
+*/
+
+#footer-section {
+    background-color: $footer-bkgd;
+    position: relative;
+    padding-bottom: 20px;
+
+
+    #social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+
+        .grow {
+            transition: all .5s ease-in-out;
+        }
+
+        a:hover {
+            color: #fff;
+
+
+            .fa-inverse {
+                color: #000;
+            }
+
+            .grow {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+
+
+/*
+********************************************************************************
+MEDIA QUERIES
+********************************************************************************
+*/
+
+@media only screen and (min-width: 768px) {
+
+    /*
+        ABOUT ME SECTION
+    */
+
+    #about-me-section {
+
+        #about-me-text-container {
+            width: 50%;
+        }
+
+        #about-me-pic-container {
+            width: 50%;
+            height: 50vw;
+        }
+    }
+
+}

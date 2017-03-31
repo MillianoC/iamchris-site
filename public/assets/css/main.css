@@ -1,0 +1,139 @@
+/*
+    BACKGROUND COLORS
+*/
+/*
+    GENERAL SECTION
+*/
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: auto; }
+  body .container {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: auto; }
+  body .section-contents {
+    max-width: 1200px; }
+  body .title {
+    font-family: 'Lato', helvetica;
+    font-size: calc(1em + 2vmax);
+    font-weight: 700;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase; }
+  body .subtitle {
+    font-family: 'Lato', helvetica;
+    font-size: calc(.75em + 1.25vmax);
+    font-weight: 400;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; }
+  body .text {
+    font-family: 'Lato', helvetica;
+    font-size: calc(.5em + 1vmax);
+    font-weight: 400;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; }
+  body a {
+    color: #000;
+    cursor: pointer; }
+
+/*
+    HEADER SECTION
+*/
+#header-section {
+  background-color: #b2ffb2;
+  position: relative; }
+  #header-section #i-am-a-web-developer-text {
+    text-align: right; }
+  #header-section #my-desk {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 50vw;
+    background: transparent url(/assets/svg/desktop.svg) no-repeat center center;
+    background-size: 500% 500%;
+    border: 2px solid black;
+    border-radius: 60px;
+    overflow-y: hidden; }
+  #header-section #laptop {
+    transform: rotate(-30deg);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 50%; }
+  #header-section #iphone {
+    transform: rotate(40deg);
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 10%; }
+  #header-section #coffee {
+    transform: rotate(130deg);
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    width: 13%; }
+
+/*
+    ABOUT ME SECTION
+*/
+#about-me-section {
+  background-color: #b2d9ff;
+  position: relative; }
+  #about-me-section #about-me-text-container {
+    width: 100%;
+    float: left; }
+  #about-me-section #about-me-pic-container {
+    width: 100%;
+    float: left;
+    height: 100vw;
+    max-height: 600px;
+    background: #66b3ff url(/assets/img/about_me.jpg) no-repeat center center;
+    background-size: contain;
+    background-blend-mode: multiply; }
+  #about-me-section .text {
+    width: 80%; }
+
+/*
+    FOOTER SECTION
+*/
+#footer-section {
+  background-color: #ffd9b2;
+  position: relative;
+  padding-bottom: 20px; }
+  #footer-section #social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    #footer-section #social-links .grow {
+      transition: all .5s ease-in-out; }
+    #footer-section #social-links a:hover {
+      color: #fff; }
+      #footer-section #social-links a:hover .fa-inverse {
+        color: #000; }
+      #footer-section #social-links a:hover .grow {
+        transform: scale(1.2); }
+
+/*
+********************************************************************************
+MEDIA QUERIES
+********************************************************************************
+*/
+@media only screen and (min-width: 768px) {
+  /*
+        ABOUT ME SECTION
+    */
+  #about-me-section #about-me-text-container {
+    width: 50%; }
+  #about-me-section #about-me-pic-container {
+    width: 50%;
+    height: 50vw; } }
